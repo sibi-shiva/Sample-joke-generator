@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Joke Generator</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!-- partial:index.partial.html -->
+		<div class="container">
+			<div class="joke-box">
+				<div class="joke">
+					<h2>Have a laugh :)</h2>
+					<div class="joke-text"></div>
+				</div>
+				<div class="mobile">
+					<div class="buttons">
+						<div class="share">
+							<button class="btn">
+								<a href="" target="_blank" id="tweet-quote">
+									<i class="fab fa-twitter"></i> Tweet Joke
+								</a>
+							</button>
+						</div>
+						<div class="new-quote">
+							<button class="btn" id="new-joke" onclick="getJoke()">
+								Next joke!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>

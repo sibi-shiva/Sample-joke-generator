@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+.joke-box {
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px;
+	background-color: darkorange;
+	border-radius: 10px;
+	color: rgb(53, 61, 93);
+	box-shadow: 2px 2px 2px seashell;
+}
+
+.joke {
+	text-align: center;
+	letter-spacing: 0.1rem;
+	margin: 40px;
+}
+.joke h4 {
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+button a {
+	text-decoration: none;
+	color: white;
+	font-style: normal;
+}
+.joke-text {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+.btn {
+	padding: 15px 10px;
+	border-radius: 8px;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	background-color: blueviolet;
+	color: white;
+	transition: all 0.3s ease;
+	border-style: none;
+}
+.btn:hover {
+	transform: scale(0.98);
+	opacity: 0.98;
+}
+.share .btn {
+	background-color: blueviolet;
+}
+@media (max-width: 475px) {
+	.buttons {
+		display: grid;
+		text-align: center;
+		grid-row-gap: 20px;
+		grid-template-columns: auto;
+		grid-column-start: auto;
+		grid-template-areas:
+			'get'
+			'tweet';
+	}
+	.mobile {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.share {
+		grid-area: 'tweet';
+		margin-bottom: 10px;
+	}
+	.new-quote {
+		grid-area: get;
+	}
+	.joke-text {
+		width: 100%;
+		padding: 0;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	.joke-box {
+		padding: 10px 20px;
+	}
+	.joke {
+		margin: 30px 5px;
+	}
+}
+@media (min-width: 650px) {
+	.joke-box {
+		width: 60vw;
+	}
+}
+@media (min-width: 1000px) {
+	.joke-box {
+		width: 40vw;
+	}
+}
